@@ -33,7 +33,7 @@ public class Tests_task02 {
 
     @Test
     public void Test_edge_case(){
-        //assertDoesNotThrow(Executable(Main.fibonacci(-1)));
+        assertDoesNotThrow(() ->{Main.fibonacci(-1);});
     }
 
     @Test
