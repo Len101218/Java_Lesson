@@ -1,6 +1,8 @@
-import org.junit.jupiter.api.Test;
+package Tests;
 
-import java.lang.reflect.Executable;
+import org.junit.jupiter.api.Test;
+import src.Task02;
+
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -25,7 +27,7 @@ public class Tests_task02 {
     public void Test_first_30_numbers(){
         int[] results = new int[]{1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811, 514229, 832040};
         for(int i = 0;i<30; i++){
-            assertEquals(results[i],Main.fibonacci(i));
+            assertEquals(results[i],Task02.fibonacci(i));
         }
     }
 
@@ -36,6 +38,6 @@ public class Tests_task02 {
 
     @Test
     public void Test_edge_case_big_input(){
-        assertEquals(2971215073L,Main.fibonacci(46));
+        assertEquals(2971215073L,Task02.fibonacci(46));
     }
 }
