@@ -49,7 +49,41 @@ public class Test_task05 {
             list.add(i);
             list = list.getNext();
         }
-        Linked_List.find_index(start)
+        for(int i = 0;i<values.length;i++) {
+            assertEquals(i,Linked_List.find_index(start,values[i]));
+        }
     }
+
+    @Test
+    public void containsTest() {
+        Linked_List start = new Linked_List(18);
+        Linked_List list = start;
+        int[] values = new int[]{1,3,5,7,9,8,6,4,2,0};
+        for(int i : values){
+            list.add(i);
+            list = list.getNext();
+        }
+        for(int i = 0;i<values.length;i++) {
+            assertEquals(true,Linked_List.contains(start,values[i]));
+        }
+        int[] otherValues = new int[]{11,32,53,74,95,86,67,48,29,-1};
+        for(int i = 0;i<otherValues.length;i++) {
+            assertEquals(false,Linked_List.contains(start,otherValues[i]));
+        }
+    }
+
+    @Test
+    public void addTest() {
+        Linked_List start = new Linked_List(18);
+        Linked_List list = start;
+        int[] values = new int[]{1, 3, 5, 7, 9, 8, 6, 4, 2, 0};
+        for (int i : values) {
+            Linked_List.add(start,i);
+            list = list.getNext();
+            assertEquals(i,list.getNumber());
+        }
+    }
+
+
 
 }
