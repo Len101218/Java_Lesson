@@ -1,42 +1,48 @@
 package src;
 
 public class Linked_List {
-    //TODO: change class type of next
-    private insert_something_here next;
+
+    private Linked_List next;
     private int number;
 
-    //TODO: implement Konstruktor: should create new list containing a number
 
 
-
-    public void add(){
-        //TODO: add element to list: maybe some parameter missing?
+    Linked_List (int a) {
+        next=null;
+        number=a;
     }
-    public void setNumber(){
-        //TODO: set Number: maybe some parameter missing?
+
+
+    public void add(int a){
+       next= new Linked_List(a);
+
+    }
+    public void setNumber(int a){
+        number=a;
+
     }
     public int getNumber(){
-        //TODO: return something here
+        return number;
     }
 
-    //TODO: change return type here
-    public insert_something_here getNext() {
-        //TODO: return something here
+
+    public Linked_List getNext() {
+        return next;
     }
 
 
     //TODO: find the 'element' in the linked list 'start'
-    public static void find(Linked_List start, Linked_List element){
+    public static void find(Linked_List start, int element){
 
     }
 
     //TODO: add the 'element' in the linked list 'start' at the end
-    public static void add(Linked_List start, Linked_List element){
+    public static void add(Linked_List start, int element){
 
     }
 
     //TODO: remove the 'element' in the linked list 'start'
-    public static void remove(Linked_List start, Linked_List element){
+    public static void remove(Linked_List start, int element){
 
     }
 
@@ -48,7 +54,7 @@ public class Linked_List {
 
 
     //TODO: remove all after 'element' in the linked list 'start' ('element' will be the new last element)
-    public static insert_something_here removeAfter(Linked_List start, Linked_List element){
+    public static insert_something_here removeAfter(Linked_List start, int element){
 
     }
 }
