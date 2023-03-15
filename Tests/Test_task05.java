@@ -41,11 +41,15 @@ public class Test_task05 {
     }
 
     @Test
-    public void getAndsetNumberTest() {
-        Linked_List list = new Linked_List(18);
-        assertEquals(18,list.getNumber());
-        list.setNumber(5);
-        assertEquals(5,list.getNumber());
+    public void find_indexTest() {
+        Linked_List start = new Linked_List(18);
+        Linked_List list = start;
+        int[] values = new int[]{1,3,5,7,9,8,6,4,2,0};
+        for(int i : values){
+            list.add(i);
+            list = list.getNext();
+        }
+        Linked_List.find_index(start)
     }
 
 }

@@ -31,6 +31,10 @@ public class Linked_List {
     }
 
 
+    //TODO: check if the 'element' is in the linked list 'start'
+    public static insert_type_here contains(Linked_List start, int element){
+
+    }
     //TODO: find the 'element' in the linked list 'start'
     public static int find_index(Linked_List start, int element){
 
