@@ -31,4 +31,13 @@ public class Test_task05 {
         }
         assertEquals(list.getNext(),null);
     }
+
+    @Test
+    public void getAndsetNumberTest() {
+        Linked_List list = new Linked_List(18);
+        assertEquals(18,list.getNumber());
+        list.setNumber(5);
+        assertEquals(5,list.getNumber());
+    }
+
 }
