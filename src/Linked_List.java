@@ -5,15 +5,15 @@ public class Linked_List {
     private insert_something_here next;
     private int number;
 
-    //TODO: implement Konstruktor
+    //TODO: implement Konstruktor: should create new list containing a number
 
 
 
-    public void setNext(){
-        //TODO: return something here
+    public void add(){
+        //TODO: add element to list: maybe some parameter missing?
     }
     public void setNumber(){
-        //TODO: return something here
+        //TODO: set Number: maybe some parameter missing?
     }
     public int getNumber(){
         //TODO: return something here
@@ -27,6 +27,11 @@ public class Linked_List {
 
     //TODO: find the 'element' in the linked list 'start'
     public static void find(Linked_List start, Linked_List element){
+
+    }
+
+    //TODO: add the 'element' in the linked list 'start' at the end
+    public static void add(Linked_List start, Linked_List element){
 
     }
 
