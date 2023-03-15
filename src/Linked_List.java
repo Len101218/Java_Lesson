@@ -32,7 +32,7 @@ public class Linked_List {
 
 
     //TODO: find the 'element' in the linked list 'start'
-    public static void find(Linked_List start, int element){
+    public static int find_index(Linked_List start, int element){
 
     }
 
