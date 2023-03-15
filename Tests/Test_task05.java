@@ -84,6 +84,22 @@ public class Test_task05 {
         }
     }
 
+    @Test
+    public void getLastTest() {
+        Linked_List start = new Linked_List(18);
+        Linked_List list = start;
+        int[] values = new int[]{1, 3, 5, 7, 9, 8, 6, 4, 2, 0};
+        for (int i : values) {
+            Linked_List.add(start,i);
+            list = list.getNext();
+            assertEquals(list,Linked_List.getLast(start));
+        }
+    }
+
+
+
+
+
 
 
 }
