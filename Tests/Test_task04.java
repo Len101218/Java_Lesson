@@ -15,6 +15,8 @@ public class Test_task04 {//noch mehr Rekursion
     ggt(4,6) = 2
     ggt(18,27)  = 9
 
+    ggt(16,12) = ggt(4,12) = ggt(4,8) = ggt(4,4) = ggt(4,0) =
+
     euclidean algorithm:
     if a>b:  ggt(a,b) = ggt(a-b,b)
     if b>a:  ggt(a,b) = ggt(a,b-a)
